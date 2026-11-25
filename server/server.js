@@ -13,7 +13,13 @@ const connectDB = require("./config/db");
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ 
+  origin: [
+  "http://localhost:5173",
+
+  "https://nixia-frontend.onrender.com"
+  ]
+ }));
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);

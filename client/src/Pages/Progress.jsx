@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from "../api";
 
 import {
   ArrowLeft,
@@ -39,7 +40,7 @@ function Progress() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/interview/stats",
+          `${API_BASE_URL}/api/interview/stats`,
           {
             headers: {
               Authorization: `Bearer ${token}`

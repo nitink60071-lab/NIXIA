@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import API_BASE_URL from "../api";
 
 import {
   ArrowLeft,
@@ -46,7 +47,7 @@ function Interview() {
     const token = getToken();
 
     const response = await fetch(
-      "http://localhost:5000/api/ai/chat",
+      `${API_BASE_URL}/api/ai/chat`,
       {
         method: "POST",
         headers: {
@@ -71,7 +72,7 @@ function Interview() {
     const token = getToken();
 
     const response = await fetch(
-      "http://localhost:5000/api/interview/save",
+      `${API_BASE_URL}/api/interview/save`,
       {
         method: "POST",
         headers: {
@@ -122,7 +123,7 @@ function Interview() {
     );
 
     const response = await fetch(
-      `http://localhost:5000/api/interview/${interviewId}/update`,
+      `${API_BASE_URL}/api/interview/${interviewId}/update`,
       {
         method: "PUT",
         headers: {

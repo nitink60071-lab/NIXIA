@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import API_BASE_URL from "../api";
 import {
   BrainCircuit,
   Mail,
@@ -40,7 +41,7 @@ const Auth = ({ onLogin }) => {
       const endpoint = isLogin ? "login" : "signup";
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/${endpoint}`,
+        `${import.meta.env.VITE_API_URL}/api/auth/${endpoint}`,
         {
           method: "POST",
           headers: {

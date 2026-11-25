@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from "../api";
 
 import {
   ArrowLeft,
@@ -26,7 +27,7 @@ function ResumeHistory() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/resume/history",
+          `${API_BASE_URL}/api/resume/history`,
           {
             headers: {
               Authorization: `Bearer ${token}`

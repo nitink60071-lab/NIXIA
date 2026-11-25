@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from "../api";
 import {
   User,
   Mail,
@@ -43,7 +44,7 @@ const Profile = ({ onBack }) => {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/profile",
+          `${API_BASE_URL}/api/profile`,
           {
             headers: {
               Authorization: `Bearer ${token}`
@@ -106,7 +107,7 @@ const Profile = ({ onBack }) => {
         .filter(Boolean);
 
       const response = await fetch(
-        "http://localhost:5000/api/profile",
+        `${API_BASE_URL}/api/profile`,
         {
           method: "PUT",
           headers: {

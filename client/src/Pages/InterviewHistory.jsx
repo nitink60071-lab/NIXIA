@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from "../api";
 
 import {
   ArrowLeft,
@@ -34,7 +35,7 @@ function InterviewHistory() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/interview/history",
+        `${API_BASE_URL}/api/interview/history`,
         {
           headers: {
             Authorization: `Bearer ${token}`

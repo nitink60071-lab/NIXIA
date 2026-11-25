@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import API_BASE_URL from "../api";
 
 import {
   Send,
@@ -62,7 +63,7 @@ const AIChat = ({ onLogout }) => {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/ai/chat",
+        `${API_BASE_URL}/api/ai/chat`,
         {
           method: "POST",
           headers: {

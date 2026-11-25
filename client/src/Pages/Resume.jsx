@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import jsPDF from "jspdf";
+import API_BASE_URL from "../api";
 
 import {
   Upload,
@@ -50,7 +51,7 @@ function Resume() {
       formData.append("resume", file);
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/analyze",
+        `${API_BASE_URL}/api/resume/analyze`,
         {
           method: "POST",
           headers: {
