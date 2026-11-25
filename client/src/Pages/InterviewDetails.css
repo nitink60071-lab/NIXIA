@@ -1,0 +1,303 @@
+
+.interview-details-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #0b1020;
+  color: #f8fafc;
+}
+
+.details-header {
+  max-width: 1100px;
+  margin: 0 auto 35px;
+}
+
+.details-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.details-back-btn:hover {
+  color: #a78bfa;
+}
+
+.details-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.details-heading-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  color: #c4b5fd;
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.details-heading h1 {
+  font-size: 30px;
+  margin: 0 0 7px;
+}
+
+.details-heading p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.details-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.details-summary {
+  position: relative;
+  background: #151c30;
+  border: 1px solid #263149;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 35px;
+}
+
+.details-label {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.details-summary h2 {
+  font-size: 25px;
+  margin: 8px 0;
+}
+
+.details-summary > div:first-child p {
+  color: #a78bfa;
+  margin: 0;
+}
+
+.details-summary-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 30px;
+}
+
+.details-summary-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #a78bfa;
+}
+
+.details-summary-stats strong {
+  color: #f8fafc;
+  font-size: 19px;
+}
+
+.details-summary-stats span {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.details-status {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.details-completed {
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.details-progress {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.details-section-heading {
+  margin-bottom: 20px;
+}
+
+.details-section-heading h2 {
+  font-size: 22px;
+  margin: 0 0 7px;
+}
+
+.details-section-heading p {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 14px;
+}
+
+.details-question-card {
+  background: #151c30;
+  border: 1px solid #263149;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.details-question-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.details-question-number {
+  color: #a78bfa;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.details-question-score {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.details-question-card > h3 {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 25px;
+}
+
+.details-answer,
+.details-feedback {
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 15px;
+  overflow-wrap: anywhere;
+}
+
+.details-answer {
+  background: #0d1528;
+  border: 1px solid #263149;
+}
+
+.details-feedback {
+  background: rgba(139, 92, 246, 0.07);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.details-answer h4,
+.details-feedback h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+
+.details-feedback h4 {
+  color: #c4b5fd;
+}
+
+.details-answer p,
+.details-feedback p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 14px;
+}
+
+.details-feedback h1,
+.details-feedback h2,
+.details-feedback h3 {
+  color: #f8fafc;
+  margin: 18px 0 10px;
+}
+
+.details-feedback ul,
+.details-feedback ol {
+  color: #cbd5e1;
+  padding-left: 22px;
+  line-height: 1.8;
+}
+
+.details-feedback strong {
+  color: #f8fafc;
+}
+
+.details-feedback code {
+  background: #0b1020;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.interview-details-state {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #0b1020;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 25px;
+}
+
+.interview-details-state button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 18px;
+  cursor: pointer;
+}
+
+.details-spinner {
+  animation: details-spin 1s linear infinite;
+}
+
+@keyframes details-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .interview-details-page {
+    padding: 22px 15px;
+  }
+
+  .details-heading h1 {
+    font-size: 23px;
+  }
+
+  .details-summary {
+    padding: 22px;
+  }
+
+  .details-summary-stats {
+    gap: 22px;
+  }
+
+  .details-status {
+    position: static;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .details-question-card {
+    padding: 18px;
+  }
+
+  .details-question-card > h3 {
+    font-size: 16px;
+  }
+}
