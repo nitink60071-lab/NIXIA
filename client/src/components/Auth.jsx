@@ -41,7 +41,7 @@ const Auth = ({ onLogin }) => {
       const endpoint = isLogin ? "login" : "signup";
 
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/auth/${endpoint}`,
+        `${API_BASE_URL}/api/auth/${endpoint}`,
         {
           method: "POST",
           headers: {
